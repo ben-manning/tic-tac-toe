@@ -10,12 +10,12 @@ $('#board').on('click', function(event) {
     if (isX) {
         makeMark = 'X';
     } else {
-        markeMark = 'O';
+        makeMark = 'O';
     }
     isX = !isX;
     $(event.target).html(makeMark);
     // console.log(makeMark);
-    // evaluate();
+
 });
 
 

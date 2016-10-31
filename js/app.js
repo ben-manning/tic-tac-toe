@@ -18,7 +18,8 @@ $('#board').on('click', function(event) {
 
 });
 
-
-
+$('#button').on('click', function(){
+  location.reload();
+})
 
 }); // document closer

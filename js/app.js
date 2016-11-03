@@ -27,9 +27,9 @@ $('#board').on('click', function(event) {
      if(check(2,4,6)) alert('You win on a diagnol 1');
      if(check(0,4,8)) alert('You win on a diagnol 2');
 
-}
+  }
 
-var check = function(num1,num2,num3){
+  var check = function(num1,num2,num3){
     var $boxes = $('.box');
 
     if(isNothing($boxes[num1].innerText,$boxes[num2].innerText,$boxes[num3].innerText)) return false
@@ -37,15 +37,17 @@ var check = function(num1,num2,num3){
 //    console.log('Checking ', $boxes[num1].innerText, $boxes[num2].innerText,$boxes[num3].innerText)
 
     return ($boxes[num1].innerText === $boxes[num2].innerText)  &&  ($boxes[num2].innerText === $boxes[num3].innerText)
-}
+  }
 
-var isNothing = function(val1,val2,val3){
+  var isNothing = function(val1,val2,val3){
   return (val1 === '') && (val2 ==='') && (val3 ==='')
-};
+
+  };
 
 
-$('#button').on('click', function(){
+  $('#button').on('click', function(){
   location.reload();
-})
 
-}); // document closer
+  })
+
+  }); // document closer
